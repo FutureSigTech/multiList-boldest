@@ -5,9 +5,9 @@
   "main": [ "multiList.js", "multiList.css" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Innoto/multiList.git"
+    "url": "https://github.com/FutureSigTech/multiList-boldest.git"
   },
-  "homepage": "https://github.com/Innoto/multiList",
+  "homepage": "https://github.com/FutureSigTech/multiList-boldest",
   "author": "Innoto",
   "license": "GNU GPL3",
   "keywords": [ "nestable", "select2", "multiList", "custom", "select", "nestable", "select", "order" ],
