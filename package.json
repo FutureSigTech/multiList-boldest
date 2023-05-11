@@ -1,5 +1,5 @@
 {
-  "name": "multilist-innoto",
+  "name": "multilist-boldest",
   "version": "0.0.1",
   "description": "MultiList allows you to customize a selector with nestable list",
   "main": [ "multiList.js", "multiList.css" ],
@@ -8,7 +8,7 @@
     "url": "https://github.com/FutureSigTech/multiList-boldest.git"
   },
   "homepage": "https://github.com/FutureSigTech/multiList-boldest",
-  "author": "Innoto",
+  "author": "Boldest",
   "license": "GNU GPL3",
   "keywords": [ "nestable", "select2", "multiList", "custom", "select", "nestable", "select", "order" ],
   "dependencies": {
