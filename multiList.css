@@ -7,6 +7,7 @@
   font-size: 13px;
   line-height: 20px;
 }
+
 .dd-list {
   display: block;
   position: relative;
@@ -15,6 +16,7 @@
   list-style: none;
   min-height: 30px;
 }
+
 .dd-item,
 .dd-empty,
 .dd-placeholder {
@@ -37,6 +39,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 .dd-empty {
   border: 1px dashed #bbb;
   min-height: 100px;
@@ -44,56 +47,68 @@
   background-size: 60px 60px;
   background-position: 0 0, 30px 30px;
 }
+
 .dd-dragel {
   position: absolute;
   pointer-events: none;
   z-index: 9999;
 }
 
-.multiListNestable{
+.multiListNestable {
   border: 1px solid #CECECE;
   background: #F8F8F8;
   padding: 5px;
   margin-bottom: 10px;
 }
-.multiListDragel{
+
+.multiListDragel {
   position: absolute;
   pointer-events: none;
   z-index: 9999;
 }
-.multiListDragel.multiListH{
-  width:auto !important;
+
+.multiListDragel.multiListH {
+  width: auto !important;
 }
 
 .multiListDragel .dd-item,
-.multiListNestable .dd-item{
+.multiListNestable .dd-item {
   padding: 2px 5px;
   margin: 2px;
   background: #fff;
-  border :1px solid #CECECE;
+  border: 1px solid #CECECE;
 }
 
 
 .multiListDragel.multiListH .dd-item,
-.multiListNestable.multiListH .dd-item{
+.multiListNestable.multiListH .dd-item {
   float: left;
-  width: auto !important;
 }
 
 .multiListDragel.multiListH.multiListImages .dd-item,
-.multiListNestable.multiListH.multiListImages .dd-item{
+.multiListNestable.multiListH.multiListImages .dd-item {
   float: left;
-  width: auto !important;
   max-height: 150px;
   padding: 5px;
   margin: 5px;
   background: white;
 }
 
+.multiListDragel.multiListH.multiListImages .dd-item .multiListImage,
+.multiListNestable.multiListH.multiListImages .dd-item .multiListImage {
+  float: left;
+}
+
+.multiListDragel.multiListH.multiListImages .dd-item .dd-multiListIcon,
+.multiListNestable.multiListH.multiListImages .dd-item .dd-multiListIcon {
+  margin-top: 50px;
+}
+
 .multiListDragel.multiListH.multiListImages .dd-item .multiListImage img,
-.multiListNestable.multiListH.multiListImages .dd-item .multiListImage img{
-  height: 140px;
-  width: 140px;
+.multiListNestable.multiListH.multiListImages .dd-item .multiListImage img {
+  height: 120px;
+  width: 120px;
+  border-left: 1px solid white;
 }
 
 
@@ -102,10 +117,11 @@
   margin-left: 5px;
   cursor: pointer;
   display: inline-block;
-  float:right;
+  float: right;
   font-weight: 900;
-  font-size: 11px;
+  font-size: 16px;
 }
+
 .multiListDragel .dd-item .unselectNestable:hover,
 .multiListNestable .dd-item .unselectNestable:hover {
   color: #999;
@@ -117,102 +133,122 @@
   right: 10px;
   top: 7px;
   color: white;
-  text-shadow: 1px 0 8px rgba(0,0,0, 0.8);
+  text-shadow: 1px 0 8px rgba(0, 0, 0, 0.8);
 }
+
 .multiListDragel.multiListImages .dd-item .multiListText,
 .multiListNestable.multiListImages .dd-item .multiListText {
   position: absolute;
-  left: 10px;
+  left: 35px;
   bottom: 10px;
   color: white;
-  text-shadow: 1px 0 8px rgba(0,0,0, 0.8);
+  text-shadow: 1px 0 8px rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-weight: bold;
-  width: 140px;
+  width: 120px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .multiListDragel.multiListImages .dd-item .dd-multiListIcon,
 .multiListNestable.multiListImages .dd-item .dd-multiListIcon {
-  position: absolute;
-  left: 10px;
-  top: 7px;
+  position: relative;
+  margin-top: 20%;
+  margin-left: 5px;
+  height: 100%;
   color: white;
-  text-shadow: 1px 0 8px rgba(0,0,0, 0.8);
+
+
+  text-shadow: 1px 0 8px rgba(0, 0, 0, 0.8);
 }
+
 .multiListDragel.multiListImages .dd-item .dd-multiListActions,
-.multiListNestable.multiListImages .dd-item .dd-multiListActions{
+.multiListNestable.multiListImages .dd-item .dd-multiListActions {
   position: absolute;
   right: 20px;
   top: 7px;
   color: white;
-  text-shadow: 1px 0 8px rgba(0,0,0, 0.8);
+  text-shadow: 1px 0 8px rgba(0, 0, 0, 0.8);
 }
 
 .multiListDragel .dd-item .dd-multiListActions,
-.multiListNestable .dd-item .dd-multiListActions{
+.multiListNestable .dd-item .dd-multiListActions {
   margin-left: 5px;
   cursor: pointer;
   display: inline-block;
-  float:right;
+  float: right;
   font-weight: bold;
-  list-style:none;
+  list-style: none;
 }
+
 .multiListDragel .dd-item .dd-multiListActions li,
-.multiListNestable .dd-item .dd-multiListActions li{
-    float: left;
-    font-size:18px;
-    margin:0px 3px;
+.multiListNestable .dd-item .dd-multiListActions li {
+  float: left;
+  font-size: 18px;
+  margin: 0px 3px;
 }
 
 .multiListDragel.multiListH .dd-item .dd-handle,
 .multiListNestable.multiListH .dd-item .dd-handle {
-  float:left;
+  float: left;
+}
+
+.multiListDragel.multiListImages .dd-item .dd-handle,
+.multiListNestable.multiListImages .dd-item .dd-handle {
+  float: left;
+  background-color: lightslategrey;
 }
 
 .multiListDragel .dd-item .dd-handle .dd-multiListIcon,
-.multiListNestable .dd-item .dd-handle .dd-multiListIcon{
-  float:left;
-  margin-right:5px;
+.multiListNestable .dd-item .dd-handle .dd-multiListIcon {
+  float: left;
+  margin-right: 5px;
 }
+
 .multiListDragel .dd-item .dd-handle .multiListText,
-.multiListNestable .dd-item .dd-handle .multiListText{
+.multiListNestable .dd-item .dd-handle .multiListText {
   display: inline-block;
   padding: 0px 10px 0 5px;
 }
 
-.multiListNestable .dd-placeholder{
-  width:100%;
+.multiListNestable .dd-placeholder {
+  width: 100%;
   margin: 2px 2px 2px -2px;
-
 }
-.multiListNestable.multiListH .dd-placeholder{
-  width:auto;
+
+
+.multiListNestable.multiListH .dd-placeholder {
+  width: auto;
   min-width: 120px;
   margin: 2px;
-  float:left;
+  float: left;
 }
-.multiListNestable.multiListH.multiListImages .dd-placeholder{
+
+.multiListNestable.multiListH.multiListImages .dd-placeholder {
 
   margin: 11px 21px 11px 21px;
 }
 
 
-.multiListSelect2 .select2-container{
-  display:block;
+.multiListSelect2 .select2-container {
+  display: block;
 }
-.multiListSelect2 .select2 .select2-selection{
+
+.multiListSelect2 .select2 .select2-selection {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.multiListSelect2 .select2-selection__choice{
+
+.multiListSelect2 .select2-selection__choice {
   display: none;
 }
-.multiListSelect2 .select2-results__option[aria-selected="true"]{
+
+.multiListSelect2 .select2-results__option[aria-selected="true"] {
   display: none;
 }
+
 .select2-container--default .select2-results__option[aria-selected="true"] {
   display: none;
 }
