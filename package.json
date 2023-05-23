@@ -1,6 +1,6 @@
 {
   "name": "multilist-boldest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MultiList allows you to customize a selector with nestable list",
   "main": [ "multiList.js", "multiList.css" ],
   "repository": {
